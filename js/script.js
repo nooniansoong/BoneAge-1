@@ -282,7 +282,7 @@ $(document).ready(function() {
 			'At the chronological age of ' + strMtoY(pt.age) +
 				', using the Brush Foundation data, the mean bone age for calculation is ' +
 				strMtoY(ref.age) +
-				'. Two standard deviations at this age is ' + ref.stdev +
+				'. Two standard deviations at this age is ' + 2*ref.stdev +
 				' months, giving a normal range of ' + strMtoY(ref.range.low) +
 				' to ' + strMtoY(ref.range.high) + ' (+/- 2 standard deviations).' + '<br>' +
 			'<br>' +
