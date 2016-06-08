@@ -377,8 +377,8 @@ $(document).ready(function() {
 		}
 
 		ref.stdev = ref[pt.sex].BFstdevs[ ref[pt.sex].BFages.indexOf(ref.age) ];
-		ref.range.low = (ref.age - (2 * ref.stdev)).toFixed(2);
-		ref.range.high = (ref.age + (2 * ref.stdev)).toFixed(2);
+		ref.range.low = (pt.age - (2 * ref.stdev)).toFixed(2);
+		ref.range.high = (pt.age + (2 * ref.stdev)).toFixed(2);
 
 		if (pt.boneAge < ref.range.low) {
 			ref.concl = '<span class="text-primary"><strong>delayed</strong></span> (' + ( (ref.age - pt.boneAge) / ref.stdev ).toFixed(1) +
