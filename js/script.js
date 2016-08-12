@@ -170,15 +170,27 @@ $(document).ready(function() {
 	boneage.initHints = function() {
 		var	bmh = boneage.male.hint, bfh = boneage.female.hint;
 
-		bmh[0] = 'Phalanges' +
-			'<ul><li>The distal ends of the proximal and middle phalanges are rounded and their proximal ends are wider and flat.</li></ul>' +
+		bmh[0] =
+			'Phalanges' +
+				'<ul><li>The distal ends of the proximal and middle phalanges are rounded and their proximal ends are wider and flat.</li></ul>' +
 			'Metacarpals' +
-			'<ul><li>The shafts of the 2nd-5th metacarpals are slightly constricted near middle portions.</li>' +
-			'<li>The proximal ends of the metacarpals are somewhat closer together than their distal ends and, consequently, the shafts appear to radiate out from the carpal area. At birth, the metacarpals of premature infants are usually more parallel to each other.</li></ul>' +
+				'<ul><li>The shafts of the 2nd-5th metacarpals are slightly constricted near middle portions.</li>' +
+				'<li>The proximal ends of the metacarpals are somewhat closer together than their distal ends and, consequently, the shafts appear to radiate out from the carpal area. At birth, the metacarpals of premature infants are usually more parallel to each other.</li></ul>' +
 			'Carpals' +
-			'<ul><li>No ossification centers seen.</li></ul>';
+				'<ul><li>No ossification centers seen.</li></ul>';
 
-		bmh[3] = 'Capitate and hamate ossification centers appear.';
+		bmh[3] =
+			'Phalanges' +
+				'<ul><li>The phalanges have increased relatively more in length than in breadth and are beginning to show individual differentiation.</li></ul>' +
+			'Metacarpals' +
+				'<ul><li>The central portions of the 2nd-5th metacarpals are more constricted.</li>' +
+				'<li>The proximal ends of the 2nd and 5th metacarpals tend to be more rounded.<li>' +
+				'<li>The proximal margin (future epiphyseal margin) of the 1st metacarpal is now distinctly flattened</li>' +
+			'Carpals' +
+				'<ul><li>Ossification centers in the capitate and hamate are now visible.</li></ul>' +
+			'Radius/Ulna' +
+				'<ul><li>A beak-like projection on the radial side of the distal end of the ulna usually persists for several years.</li>' +
+				'<li>The flaring of the distal ends of the radius and ulna is slightly more pronounced.</li></ul>';
 		bmh[6] = bmh[3];
 		bmh[9] = bmh[3];
 		bmh[12] = bmh[3];
