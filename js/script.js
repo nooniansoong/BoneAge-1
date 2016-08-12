@@ -170,7 +170,14 @@ $(document).ready(function() {
 	boneage.initHints = function() {
 		var	bmh = boneage.male.hint, bfh = boneage.female.hint;
 
-		bmh[0] = 'No ossification centers seen.';
+		bmh[0] = 'Phalanges' +
+			'<ul><li>The distal ends of the proximal and middle phalanges are rounded and their proximal ends are wider and flat.</li></ul>' +
+			'Metacarpals' +
+			'<ul><li>The shafts of the 2nd-5th metacarpals are slightly constricted near middle portions.</li>' +
+			'<li>The proximal ends of the metacarpals are somewhat closer together than their distal ends and, consequently, the shafts appear to radiate out from the carpal area. At birth, the metacarpals of premature infants are usually more parallel to each other.</li></ul>' +
+			'Carpals' +
+			'<ul><li>No ossification centers seen.</li></ul>';
+
 		bmh[3] = 'Capitate and hamate ossification centers appear.';
 		bmh[6] = bmh[3];
 		bmh[9] = bmh[3];
