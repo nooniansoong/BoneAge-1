@@ -191,19 +191,57 @@ $(document).ready(function() {
 			'Radius/Ulna' +
 				'<ul><li>A beak-like projection on the radial side of the distal end of the ulna usually persists for several years.</li>' +
 				'<li>The flaring of the distal ends of the radius and ulna is slightly more pronounced.</li></ul>';
-		bmh[6] = bmh[3];
-		bmh[9] = bmh[3];
-		bmh[12] = bmh[3];
-		bmh[15] = 'Distal radial epiphysis ossification center appears.';
-		bmh[18] = 'Ossification centers generally appear in an orderly pattern:' +
-			'<ol><li>proximal phalanges' +
-			'<li>metacarpals' +
-			'<li>middle phalanges' +
-			'<li>distal phalanges</ol>';
-		bmh[24] = bmh[18];
-		bmh[32] = bmh[18];
-		bmh[36] = '<ul><li>Ossification centers increase in width until they are as wide as the metaphyses.' +
-			'<li>The epiphyses of the ulna and all carpal bones (except the pisiform) appear.</ul>';
+		bmh[6] =
+			'Metacarpals' +
+				'<ul><li>There are now distinct individual differences in the shape and dimensions of the metacarpal shafts.</li></ul>' +
+			'Carpals' +
+				'<ul><li>Capitate and hamate ossification centers have increased in size and are closer together.</li>' +
+				'<li>The future long axis of the capitate is already established.</li></ul>' +
+			'Radius/Ulna' +
+				'<ul><li>The flaring of the distal ends of the radius and ulna is quite pronounced.</li></ul>';
+		bmh[9] =
+			'Metacarpals' +
+				'<ul><li>The distal 1st metacarpal and bases of the 2nd-5th metacarpals have become relatively larger and more rounded.</li></ul>' +
+			'Carpals' +
+				'<ul><li>The surface of the capitate adjacent to the hamate has begun to flatten.</li></ul>';
+		bmh[12] =
+			'Phalanges' +
+				'<ul><li>The proximal phalanges have grown somewhat more in length than width and the distal tips of the 3rd and 4th appear to be slightly compressed laterally.</li></ul>' +
+			'Carpals' +
+				'<ul><li>Some further flattening has occurred in the hamate surface of the capitate.</li></ul>';
+		bmh[15] =
+			'Phalanges' +
+				'<ul><li>The sides of the distal ends of the 3rd and 4th proximal phalanges are now somewhat flattened. The trochlear surface of each phalanx will form later between and immediately distal to those flattened areas.</ul></li>' +
+			'Metacarpals' +
+				'<ul><li>That portion of the base of the 2nd metacarpal which will later articulate with the capitate has begun to flatten.</ul></li>' +
+			'Carpals' +
+				'<ul><li>The flattening of the hamate surface of the capitate is now more pronounced, and the adjacent surface of the hamate has become somewhat less convex.</ul></li>' +
+			'Radius' +
+				'<ul><li>A small ossification center is visible in the distal radial epiphysis.</ul></li>';
+		bmh[18] =
+			'Phalanges and Metacarpals' +
+				'<ul><li>Ossification centers are now visible in the 2nd-5th metacarpal heads and proximal phalanges, and in the distal phalanx of the thumb.</li>' +
+				'<li>Ossification in these epiphyses usually appears first centrally and subsequently extends transversely.</li>' +
+				'<li>These metacarpal epiphyses, especially that of the 4th metacarpal, are slightly advanced in their development.</li></ul>' +
+			'Radius' +
+				'<ul><li>The ulnar side of the radial epiphysis is pointed and its radial side is thicker and convex.</li></ul>';
+		bmh[24] =
+			'Phalanges' +
+				'<ul><li>Ossification has now begun in the epiphysis of the 5th proximal phalanx, and 3rd and 4th middle and distal phalanges.</li>' +
+				'<li>The epiphyses of the 2nd-5th proximal phalanges are now disc-shaped and their margins are smooth.</li></ul>';
+		bmh[32] =
+			'Phalanges and Metacarpals' +
+				'<ul><li>Ossification centers are now visible in the proximal phalanx of the thumb, 2nd middle phalanx, 2nd and 5th distal phalanges, and 1st metacarpal.</li>' +
+				'<li>The widths of the epiphyses of the 2nd-5th proximal phalanges now equals or exceeds half the width of the adjacent margins of their shafts.</li>' +
+				'<li>The epiphysis of the distal phalanx of the thumb has flattened to conform to the shape of the adjacent surface of its shaft.</li></ul>'
+		bmh[36] =
+			'Phalanges' +
+				'<ul><li>The epiphyses of the 2nd-4th middle phalanges have widened transversely to form disc-like structures which are thickest in the middle and taper toward each end. Their margins are smooth.</ul></li>' +
+			'Metacarpals' +
+				'<ul><li>The epiphyses of the 2nd-5th metacarpals have enlarged and have become more uniformly rounded and their margins somewhat smoother.</ul></li>' +
+			'Radius' +
+				'<ul><li>The volar and dorsal surfaces of the radial epiphysis can now be distinguished. The volar margin is visible as a rather thick white line. Distally the thin dorsal margin of the epiphysis projects beyond the volar margin.</ul></li>';
+
 		bmh[42] = bmh[36];
 		bmh[48] = bmh[36];
 		bmh[54] = bmh[36];
