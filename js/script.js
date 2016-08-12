@@ -184,8 +184,8 @@ $(document).ready(function() {
 				'<ul><li>The phalanges have increased relatively more in length than in breadth and are beginning to show individual differentiation.</li></ul>' +
 			'Metacarpals' +
 				'<ul><li>The central portions of the 2nd-5th metacarpals are more constricted.</li>' +
-				'<li>The proximal ends of the 2nd and 5th metacarpals tend to be more rounded.<li>' +
-				'<li>The proximal margin (future epiphyseal margin) of the 1st metacarpal is now distinctly flattened</li>' +
+				'<li>The proximal ends of the 2nd and 5th metacarpals tend to be more rounded.</li>' +
+				'<li>The proximal margin (future epiphyseal margin) of the 1st metacarpal is now distinctly flattened</li></ul>' +
 			'Carpals' +
 				'<ul><li>Ossification centers in the capitate and hamate are now visible.</li></ul>' +
 			'Radius/Ulna' +
