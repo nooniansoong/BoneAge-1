@@ -1,4 +1,4 @@
-/*global document, $, Sly */
+/*global document, console, $, Sly, Clipboard */
 /*jshint globalstrict: true*/
 "use strict";
 
@@ -622,6 +622,17 @@ $(document).ready(function() {
 			'The hand is indistinguishable from that of a young adult. Traces of some epiphyseal lines of fusion can still be seen and may persist throughout life.';
 	};
 
+	// ClipboardJS init
+	(function ClipboardJSInit() {
+		var clipboard = new Clipboard('#btnCopy');
+		clipboard.on('success', function(e) {
+			console.log(e);
+		});
+		clipboard.on('error', function(e) {
+			console.log(e);
+		});
+	})();
+
 	// preselect bone age to match chronological age, as a starting point
 	boneage.preselectBoneAge = function() {
 		if (SlyCarousel.initialized) {
@@ -863,7 +874,7 @@ $(document).ready(function() {
 		boneage.unSelectAll();
 	});
 
-	$('#labelReport, #btnSelectAll').click(function() {
+	$('#labelReport').click(function() {
 		boneage.selectAll();
 	});
 
