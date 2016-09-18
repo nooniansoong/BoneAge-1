@@ -771,10 +771,10 @@ $(document).ready(function() {
 		ref.range.high = (pt.age + (2 * ref.stdev)).toFixed(2);
 
 		if (pt.boneAge < ref.range.low) {
-			ref.concl = '<span class="text-primary"><strong>delayed</strong></span> (' + ( (ref.age - pt.boneAge) / ref.stdev ).toFixed(1) +
+			ref.concl = '<span class="text-primary"><strong>delayed</strong></span> (' + ( (pt.age - pt.boneAge) / ref.stdev ).toFixed(1) +
 				' standard deviations below the mean)';
 		} else if (pt.boneAge > ref.range.high) {
-			ref.concl = '<span class="text-primary"><strong>advanced</strong></span> (' + ( (pt.boneAge - ref.age) / ref.stdev ).toFixed(1) +
+			ref.concl = '<span class="text-primary"><strong>advanced</strong></span> (' + ( (pt.boneAge - pt.age) / ref.stdev ).toFixed(1) +
 				' standard deviations above the mean)';
 		} else {
 			ref.concl = 'normal';
