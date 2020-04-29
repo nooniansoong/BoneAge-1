@@ -660,9 +660,6 @@ $(document).ready(function() {
 		boneage.setHint();
 
 		boneage.report =
-			'<b>PROCEDURE PERFORMED:</b> BONE AGE STUDY<br><br>' +
-			'<b>COMPARISON:</b> [None].<br><br>' +
-			'<b>TECHNIQUE:</b> Single frontal view of the left hand.<br><br>' +
 			'<b>FINDINGS:</b><br>' +
 			'Sex: ' + pt.sex + '<br>' +
 			'Study Date: ' + ref.today + '<br>' +
