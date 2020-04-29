@@ -675,7 +675,7 @@ $(document).ready(function() {
 			'<br>' +
 			'By the method of Greulich and Pyle, the bone age is estimated to be ' +
 				strMtoY(pt.boneAge) + '.<br><br>' +
-			'<b>FINDINGS:</b>' + '<br>' +
+			'<b>IMPRESSION:</b>' + '<br>' +
 			'Chronological Age: ' + strMtoY(pt.age) + '<br>' +
 			'Estimated Bone Age: ' + strMtoY(pt.boneAge) + '<br>' +
 			'<br>' +
