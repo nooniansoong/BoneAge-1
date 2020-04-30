@@ -152,7 +152,7 @@ div#left {
 
 div#right {
 	float: right;
-	width: 67%;
+	width: auto;
 }
 
 #divBoy, #divGirl {
