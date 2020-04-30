@@ -3,7 +3,7 @@
 	===================	*/
 .date-picker {
 	position: relative;
-	width: 180px;
+	width: 200px;
 	height: 110px;
 	padding: 5px;
 	color: #fff;
@@ -98,7 +98,7 @@
 }
 
 img {
-	height: 640px !important;
+	height: 660px !important;
 	width: auto !important;
 	margin: 0px 0px 0px 0px !important;
 }
