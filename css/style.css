@@ -3,7 +3,7 @@
 	===================	*/
 .date-picker {
 	position: relative;
-	width: 200px;
+	width: 180px;
 	height: 110px;
 	padding: 5px;
 	color: #fff;
@@ -55,8 +55,8 @@
 	| SLY IMAGES |
 	==============	*/
 .frame {
-/*	width: 75%;
-	height: auto;
+/*	width: 400px;
+	height: 660px;
 	overflow: hidden;
 	outline: 1px solid #aaa;*/
 	cursor: pointer;
@@ -98,7 +98,7 @@
 }
 
 img {
-	height: fill !important;
+	height: 660px !important;
 	width: auto !important;
 	margin: 0px 0px 0px 0px !important;
 }
@@ -118,7 +118,7 @@ div.container {
 }
 
 div#left {
-	width: 25%;
+	width: 33%;
 	float: left;
 }
 
@@ -152,7 +152,7 @@ div#left {
 
 div#right {
 	float: right;
-	width: 75%;
+	width: 67%;
 }
 
 #divBoy, #divGirl {
