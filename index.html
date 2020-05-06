@@ -40,11 +40,11 @@
 
 <BODY>
 
-	<div class="jumbotron text-center"><h1><b><u>Pediatric Bone Age Calculator</b></u></h1></div>
+	<div class="jumbotron text-center"><h1><b>Pediatric Bone Age Calculator</b></h1></div>
 
-<div id="left" class="container">
+<div id="left" class="row">
 
-	<div id="divSex">
+	<div id="divSex" class="col">
 		<label class="h5"><b></u>Sex:</b></u></label>
 		<button class="btn btn-lg btn-info" id="btnBoy">
 			&#9794; Boy
@@ -54,8 +54,8 @@
 		</button>
 	</div>
 
-	<div id="divDOB">
-		<label class="h5" id="labelDOB">DoB:</label>
+	<div id="divDOB" class="col">
+		<label class="h5" id="labelDOB"><b></u>DoB:</b></u></label>
 		<div class="date-picker">
 			<div class="dpframe month">
 				<ul></ul>
@@ -69,8 +69,8 @@
 		</div>
 	</div>
 
-	<div id="divReport">
-		<label class="h5" id="labelReport">Report</label>
+	<div id="divReport" class="col">
+		<label class="h5" id="labelReport"><b><u>Report</b></u></label>
 		<div id="taReport" contenteditable="true">
 			An error has occurred.
 		</div>
@@ -78,31 +78,10 @@
 		<button class="btn btn-warning" id="btnReset"><strong>Reset</strong></button>
 	</div>
 
-	<div>
-		<a id="references" data-toggle="modal" data-target="#modalRef"><small>Adapted from Greulich and Pyle</small></a>
-	</div>
-
-	<!-- References modal -->
-	<div class="modal fade" id="modalRef" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-					<h4 class="modal-title" id="myModalLabel">References</h4>
-				</div>
-				<div class="modal-body">
-					<ol>
-						<li>Greulich WW, Pyle SI. Radiographic atlas of skeletal development of the hand and wrist. 2nd ed. Stanford, Calif: Stanford University Press, 1959.</li>
-					</ol>
-				</div>
-			</div>
-		</div>
-	</div>
-
 </div id="left">
 
-<div id="right" class="container">
-	<div class="wrap noselect" id="wrap">
+<div id="right" class="row">
+	<div class="col" id="wrap">
 
 		<h2 id="h2Instructions">
 			<ol>
