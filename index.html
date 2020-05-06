@@ -13,7 +13,6 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
 	<title>Pediatric Bone Age Calculator</title>
 
 	<link href="css/style.css" rel="stylesheet">
@@ -40,10 +39,12 @@
 </HEAD>
 
 <BODY>
-	<div class="jumbotron text-center"><h1><b>Pediatric Bone Age Calculator</b></h1></div>
 
-<div id="left" class="row">
-	<div id="divSex" class="col">
+	<div class="jumbotron text-center"><h1><b><u>Pediatric Bone Age Calculator</b></u></h1></div>
+
+<div id="left" class="container">
+
+	<div id="divSex">
 		<label class="h5"><b></u>Sex:</b></u></label>
 		<button class="btn btn-lg btn-info" id="btnBoy">
 			&#9794; Boy
@@ -52,8 +53,9 @@
 			&#9792; Girl
 		</button>
 	</div>
-	<div id="divDOB" class="col">
-		<label class="h5" id="labelDOB"><b></u>DoB:</b></u></label>
+
+	<div id="divDOB">
+		<label class="h5" id="labelDOB">DoB:</label>
 		<div class="date-picker">
 			<div class="dpframe month">
 				<ul></ul>
@@ -66,10 +68,42 @@
 			</div>
 		</div>
 	</div>
+
+	<div id="divReport">
+		<label class="h5" id="labelReport">Report</label>
+		<div id="taReport" contenteditable="true">
+			An error has occurred.
+		</div>
+		<button class="btn btn-success" id="btnCopy" data-clipboard-target="#taReport"><strong>Copy to Clipboard</strong></button>
+		<button class="btn btn-warning" id="btnReset"><strong>Reset</strong></button>
+	</div>
+
+	<div>
+		<a id="references" data-toggle="modal" data-target="#modalRef"><small>Adapted from Greulich and Pyle</small></a>
+	</div>
+
+	<!-- References modal -->
+	<div class="modal fade" id="modalRef" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title" id="myModalLabel">References</h4>
+				</div>
+				<div class="modal-body">
+					<ol>
+						<li>Greulich WW, Pyle SI. Radiographic atlas of skeletal development of the hand and wrist. 2nd ed. Stanford, Calif: Stanford University Press, 1959.</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </div id="left">
 
-<div id="right" class="row">
-	<div class="col" id="wrap">
+<div id="right" class="container">
+	<div class="wrap noselect" id="wrap">
+
 		<h2 id="h2Instructions">
 			<ol>
 				<li>Select the child's sex</li>
@@ -77,6 +111,7 @@
 				<li>Identify the closest matching image</li>
 			</ol>
 		</h2>
+
 		<div class="frame" id="divBoy">
 			<ul class="slidee text-warning">
 				<li><img src="img/male_000.jpg"><br>Newborn →</li>
@@ -112,6 +147,7 @@
 				<li><img src="img/male_228.jpg"><br>← 19 years</li>
 			</ul>
 		</div class="frame" id="divBoy">
+
 		<div class="frame" id="divGirl">
 			<ul class="slidee text-warning">
 				<li><img src="img/female_000.jpg"><br>Newborn →</li>
@@ -143,31 +179,23 @@
 				<li><img src="img/female_216.jpg"><br>← 18 years</li>
 			</ul>
 		</div class="frame" id="divGirl">
+
 	<div id="prevnext">
 		<button class="btn btn-default btn-xs" id="prev">Prev</a>
 		<button class="btn btn-default btn-xs" id="next">Next</a>
 	</div>
+
 		<!-- common scrollbar, initiated uniquely for boys and girls -->
 		<div class="scrollbar" id="sbCommon">
 			<div class="handle"></div>
 		</div>
+
 	</div class="wrap">
+
 	<div id="tooltip">
-		<label class="h4 noselect text-center"><input type="checkbox" id="cbHints">Hints</label>
+		<label class="h4 noselect"><input type="checkbox" id="cbHints">Hints</label>
 	</div>
-
 </div id="right">
-
-<div>
-	<div id="divReport" class="col">
-		<label class="h5" id="labelReport"><b><u>Report</b></u></label>
-		<div id="taReport" contenteditable="true">
-			An error has occurred.
-		</div>
-		<button class="btn btn-success" id="btnCopy" data-clipboard-target="#taReport"><strong>Copy to Clipboard</strong></button>
-		<button class="btn btn-warning" id="btnReset"><strong>Reset</strong></button>
-	</div>
-</div>
 
 <!-- jQuery: http://jquery.com/ -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
