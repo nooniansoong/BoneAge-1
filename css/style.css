@@ -56,7 +56,7 @@
 	==============	*/
 .frame {
 /*	width: 500px;
-	height: 860px;
+	height: 800px;
 	overflow: hidden;
 	outline: 1px solid #aaa;*/
 	cursor: pointer;
@@ -92,7 +92,7 @@
 	position: relative;
 	margin: 1em 0;
 	width: 500px;
-	height: 860px;
+	height: 820px;
 	overflow: hidden;
 	outline: 1px solid #4e5d6c;
 }
