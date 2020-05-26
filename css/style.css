@@ -99,7 +99,7 @@
 
 img {
 	height: 800px !important;
-	width: auto !important;
+	width: auto;
 	margin: 0px 0px 0px 0px !important;
 }
 
